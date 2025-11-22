@@ -1,0 +1,4093 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Toolbar Buttons Available for TinyMCE | TinyMCE Documentation</title>
+    <link rel="canonical" href="https://www.tiny.cloud/docs/tinymce/latest/available-toolbar-buttons/">
+    <meta name="description" content="Complete list of toolbar buttons available for the toolbar and quick toolbars.">
+    <meta name="keywords" content="toolbar, button, tool bar">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="sitemap" type="application/xml" href="/docs/tinymce/antora-sitemap.xml"/>
+
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    
+    <!-- Algolia docsearch styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+
+    <!-- Algolia docsearch script -->
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="../../../_/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../_/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../_/img/favicon-16x16.png">
+<link rel="mask-icon" href="../../../_/img/safari-pinned-tab.svg" color="#335dff">
+<link rel="shortcut icon" href="../../../_/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="../../../_/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P3PQCX2');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>var uiRootPath = '../../../_'</script>
+
+    <script
+  type="text/javascript"
+  src="https://app.spara.co/embed-vMdBxG3LA.js"
+></script>
+
+<script type="text/javascript">
+  window.Spara = {
+    whitelistedPaths: ['/tinymce','/tinymce/features','/docs/tinymce/latest/full-featured-premium-demo','/get-tiny'],
+    blacklistedPaths: ['*'],
+    onSparaLoad: (t) => {
+      console.log("Spara is loaded! 🎬");
+      console.log({t})
+    },
+    onUserCtaClick: (t) => {
+      console.log("User clicked the Spara CTA 😀");
+      console.log({t})
+    },
+    onUserMessageSent: () => {
+      console.log("User sent a message to Spara 💬");
+    },
+  }
+</script>  </head>
+  <body class="article">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3PQCX2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.tiny.cloud/docs/tinymce/latest/">
+        <img id="pc-logo" src="../../../_/img/tiny-white.svg" alt="Tiny logo" height="48px" style="padding: 10px 10px 10px 0px;"></a>
+        <img id="mobile-logo" src="../../../_/img/tiny-white-sm.png" alt="Tiny logo"></a>
+        <div class="new-search-input">
+  <div class="search-box" id="search-box"></div>
+</div>
+
+<script type="text/javascript">
+  (function () {
+    const versions = {
+      "latest": "docs-8x",
+      "7": "docs-7x",
+      "6": "docs-6x",
+      "5": "docs-5x",
+    }
+
+    function extractVersionFromUrl(url) {
+      const pathSegments = url.pathname.split('/');
+      const versionIndex = pathSegments.indexOf('tinymce') + 1;
+      if (versionIndex > 0 && versionIndex < pathSegments.length) {
+        return pathSegments[versionIndex];
+      }
+    }
+
+    const currentUrl = new URL(window.location.href);
+    const extractedVersion = extractVersionFromUrl(currentUrl);
+    
+    // Validate that the extracted version exists in our versions mapping
+    const currentVersion = versions.hasOwnProperty(extractedVersion) ? extractedVersion : null;
+
+    docsearch({
+      container: '#search-box',
+      appId: 'OUKDAAI2PO',
+      indexName: 'tiny',
+      apiKey: '8e6918f1a5695e9876e979c3f6a0a57e',
+      searchParameters: {
+        facetFilters: currentVersion ? [`tags:${versions[currentVersion]}`] : [],
+      },
+    });
+  })();
+</script>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://www.tiny.cloud/">Home</a>
+        <a class="navbar-item" href="https://www.tiny.cloud/pricing/">Pricing</a>
+        <a class="navbar-item" href="https://www.tiny.cloud/get-tiny/language-packages/">Language Packs</a>
+        <a class="navbar-item navbar-item--login" href="https://www.tiny.cloud/auth/login/">Log In</a>
+        <div class="navbar-item navbar-item--api-key">
+          <span class="control">
+            <a class="get-api-key" target="blank" href="https://www.tiny.cloud/auth/signup/">Get Free API Key</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tinymce" data-version="8">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+<a class="get-tinymce" target="_blank" rel="noopener noreferrer" href="https://www.tiny.cloud/get-tiny/" data-marketing="docs-nav-get-tiny">
+  <svg class="get-tinymce-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path fill="#222" fill-rule="evenodd"
+      d="M8 12c-.3 0-.5-.1-.7-.3L1.6 6 3 4.6l4 4V0h2v8.6l4-4L14.4 6l-5.7 5.7c-.2.2-.4.3-.7.3zm-7 2h14v2H1v-2z">
+  </svg>
+  <span class="get-tinymce-text">Get TinyMCE</span>
+</a>    <h3 class="title"><a href="../">TinyMCE Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../getting-started/">Getting started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction-to-tinymce/">What is TinyMCE?</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installation/">Installation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Cloud</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../cloud-quick-start/">Quick start</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-cloud/">React</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../angular-cloud/">Angular</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vue-cloud/">Vue.js</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../blazor-cloud/">Blazor</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../svelte-cloud/">Svelte</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webcomponent-cloud/">Web Component</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../jquery-cloud/">jQuery</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bootstrap-cloud/">Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../django-cloud/">Django</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../laravel-tiny-cloud/">Laravel</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../rails-cloud/">Ruby on Rails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Self-hosted</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">React</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../react-pm-host/">Using a package manager with hosting</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../react-pm-bundle/">Using a package manager with bundling</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../react-zip-host/">Using a .zip package with hosting</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../react-zip-bundle/">Using a .zip package with bundling</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Angular</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../angular-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../angular-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vue.js</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../vue-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../vue-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Blazor</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../blazor-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../blazor-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Svelte</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../svelte-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../svelte-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Web Component</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../webcomponent-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../webcomponent-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../swing/">Java Swing</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../shadow-dom/">Shadow DOM</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../jquery-pm/">jQuery</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bootstrap-zip/">Bootstrap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../django-zip/">Django</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../expressjs-pm/">Node.js + Express</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Laravel</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../laravel-composer-install/">Using the Composer package</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../laravel-zip-install/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ruby on Rails</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../rails-third-party/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../rails-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../wordpress/">WordPress</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../npm-projects/">NPM projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../php-projects/">PHP projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dotnet-projects/">.NET projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bower-projects/">Bower projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../zip-install/">TinyMCE .zip deployments</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrading/">Upgrading TinyMCE</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../how-to-guides/">How-to guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Learn the basics</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../basic-setup/">Basic setup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../work-with-plugins/">Using plugins to extend TinyMCE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../filter-content/">Content filtering</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../localize-your-language/">Localization</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../spell-checking/">Spell checking</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-content-css/">CSS for rendering content</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../userlookup/">Using the UserLookup API</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Environment setup guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">React framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-pm-host/">Using a package manager with hosting</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-pm-bundle/">Using a package manager with bundling</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-zip-host/">Using a .zip package with hosting</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-zip-bundle/">Using a .zip package with bundling</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../react-ref/">Technical reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Angular framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../angular-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../angular-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../angular-zip/">Using a .zip package</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../angular-ref/">Technical reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vue.js framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vue-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vue-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vue-zip/">Using a .zip package</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vue-ref/">Technical reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Blazor framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../blazor-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../blazor-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../blazor-zip/">Using a .zip package</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../blazor-ref/">Technical reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Svelte framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../svelte-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../svelte-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../svelte-zip/">Using a .zip package</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../svelte-ref/">Technical reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Web Component</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webcomponent-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webcomponent-pm/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webcomponent-zip/">Using a .zip package</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webcomponent-ref/">Technical reference</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../swing/">Java Swing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">jQuery</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../jquery-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../jquery-pm/">Using a package manager</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bootstrap framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bootstrap-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bootstrap-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Django framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../django-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../django-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../expressjs-pm/">Node.js + Express</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Laravel framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../laravel-tiny-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../laravel-composer-install/">Using the Composer package</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../laravel-zip-install/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ruby on Rails framework</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../rails-cloud/">Using the Tiny Cloud</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../rails-third-party/">Using a package manager</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../rails-zip/">Using a .zip package</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wordpress/">WordPress</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../npm-projects/">NPM projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../php-projects/">PHP projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dotnet-projects/">.NET projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../bower-projects/">Bower projects</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../zip-install/">TinyMCE .zip deployments</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../cloud-deployment-guide/">Cloud deployment guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-and-features/">Cloud deployment of editor &amp; plugins</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../features-only/">Cloud deployment of plugins Only</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-plugin-version/">Specify editor version &amp; plugins</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../plugin-editor-version-compatibility/">Version compatibility reference</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../cloud-troubleshooting/">Cloud Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Premium server-side services guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../bundle-intro-setup/">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../individual-hyperlinking-container/">Hyperlinking service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../individual-image-proxy-container/">Image Proxy service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../individual-spelling-container/">Spelling service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../individual-export-to-pdf-on-premises/">Export to PDF</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../individual-import-from-word-and-export-to-word-on-premises/">Import from Word and Export to Word</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Configure the server-side components</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../configure-required-services/">Required configuration</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../configure-common-settings-services/">Optional common settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../configure-hyperlink-service/">Hyperlinking service settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../configure-imageproxy-service/">Image Proxy service settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../configure-spelling-service/">Spelling service settings</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../self-hosting-hunspell/">Spelling service - Using Hunspell dictionaries</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../troubleshoot-server/">Troubleshoot server-side components</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Customizing the editor appearance</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../customize-ui/">Customizing the UI</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../creating-a-skin/">Create a skin</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../creating-an-icon-pack/">Create an icon pack</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Images Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../upload-images/">Image uploads</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../php-upload-handler/">PHP image upload handler</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ui-components/">Creating custom UI components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Toolbar Buttons</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-toolbarbuttons/">Toolbar buttons</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-basic-toolbar-button/">Basic toolbar button</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-toggle-toolbar-button/">Toggle toolbar button</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-menu-toolbar-button/">Menu toolbar button</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-split-toolbar-button/">Split toolbar button</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-group-toolbar-button/">Group toolbar button</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Menu Items</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../creating-custom-menu-items/">Creating custom menu items</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-basic-menu-items/">Custom Basic menu items</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-nested-menu-items/">Custom Nested menu items</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-toggle-menu-items/">Custom Toggle menu items</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Dialogs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dialog/">Creating custom dialogs</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dialog-configuration/">Basic configuration</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dialog-components/">Body components</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dialog-footer-buttons/">Footer buttons</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dialog-apis/">APIs</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../dialog-examples/">Interactive examples</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../urldialog/">URL dialogs</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../autocompleter/">Autocompleter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../creating-custom-notifications/">Notifications</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../customsidebar/">Sidebars</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../custom-view/">Views</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../context/">Context</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../contextform/">Context forms</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../contextmenu/">Context menus</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../contexttoolbar/">Context toolbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../shortcuts/">Keyboard Shortcuts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../creating-a-plugin/">Creating custom plugins</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-command-identifiers/">Available Commands</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../events/">Available Events</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-icon-identifiers/">Available Icons</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../annotations/">Using the Annotations API</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Bundling TinyMCE</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../introduction-to-bundling-tinymce/">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Webpack</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webpack-es6-npm/">ES6 and npm</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webpack-cjs-npm/">CommonJS and npm</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webpack-es6-download/">ES6 and a .zip archive</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../webpack-cjs-download/">CommonJS and a .zip archive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Vite</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../vite-es6-npm/">ES6 and npm</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Rollup.js</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../rollup-es6-npm/">ES6 and npm</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../rollup-es6-download/">ES6 and a .zip archive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Browserify</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../browserify-cjs-npm/">CommonJS and npm</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../browserify-cjs-download/">CommonJS and a .zip archive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-plugins/">Plugins</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-content-css/">Content CSS</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-skins/">Skins</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-icons/">Icons</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-models/">Models</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-localization/">UI localizations</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../bundling-themes/">Themes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../upgrading/">Upgrading TinyMCE</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../migration-guides/">Migration guides</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../migration-from-4x/">Migrating from TinyMCE 4</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../migration-from-5x/">Migrating from TinyMCE 5</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../migration-from-6x/">Migrating from TinyMCE 6</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../migration-from-7x/">Migrating from TinyMCE 7</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../migration-from-froala/">Migrating from Froala</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../generate-rsa-key-pairs/">Generate public key pairs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../understanding-editor-loads/">Understanding editor loads</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../examples/">Examples</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../examples/#general-examples">General examples</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../basic-example/">Basic example</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../full-featured-open-source-demo/">Full-featured demo including Open Source features</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../full-featured-premium-demo/">Full-featured demo Including Open Source and Premium features</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../classic-demo/">Classic editor mode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../inline-demo/">Inline editor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../distraction-free-demo/">Distraction-free editor</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../examples/#integration-examples">Integration examples</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ie-template-creation/">Template creation example</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../examples/#skins-and-icons-examples">Skins and Icons examples</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../bootstrap-demo/">Bootstrap Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../borderless-demo/">Borderless Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../fabric-demo/">Fabric Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../fluent-demo/">Fluent Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../jam-demo/">Jam Icons Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../material-classic-demo/">Material Classic Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../material-outline-demo/">Material Outline Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../naked-demo/">Naked Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../outside-demo/">Outside Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../small-demo/">Small Icons Demo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../snow-demo/">Snow Demo</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../initial-configuration/">Initial configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../editor-important-options/">Integration options</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../editor-size-options/">Size</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../editor-save-and-submit/">Save and submit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../promotions/">Promotions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Interface</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Editor modes</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../use-tinymce-classic/">Classic editing mode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../use-tinymce-inline/">Inline editing mode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../use-tinymce-distraction-free/">Distraction-free editing mode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../inline-editor-options/">Inline editor options</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../multiple-editors/">Multiple editors in a page</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tinymce-for-mobile/">TinyMCE for mobile</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Editor appearance</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-skin/">Skins</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-icons/">Icons</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../enhanced-skins-and-icon-packs/">Enhanced Skins &amp; Icon Packs</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-theme/">Themes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Menus</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../menus-configuration-options/">Options</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../available-menu-items/">Available Menu Items</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editor-context-menu-identifiers/">Available Context Menu Items</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Toolbars</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../toolbar-configuration-options/">Options</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="./">Available Toolbar Buttons</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../statusbar-configuration-options/">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../accessibility/">Accessibility</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ui-localization/">Localization options</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ui-mode-configuration-options/">UI Mode</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Content</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../add-css-options/">Add CSS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../content-behavior-options/">Behaviors</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../non-editable-content-options/">Non-editable content</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../user-formatting-options/">User formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../content-filtering/">Content filtering</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../content-localization/">Localization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../file-image-upload/">Images and files</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../content-formatting/">Content formats</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../content-appearance/">Content appearance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../copy-and-paste/">Copy &amp; paste options</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../spelling/">Spelling options</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../table-options/">Table options</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../url-handling/">URL handling options</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../editor-model/">Editor content models</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../plugins/">Plugins</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Premium plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../a11ychecker/">Accessibility Checker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advanced-typography/">Advanced Typography</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ai/">AI Assistant</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ai-openai/">OpenAI ChatGPT integration guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ai-azure/">Azure AI integration guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ai-bedrock/">Amazon Bedrock integration guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ai-gemini/">Google Gemini integration guide</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../ai-proxy/">AI proxy server reference guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../casechange/">Case Change</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../checklist/">Checklist</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Comments</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../introduction-to-tiny-comments/">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-using-comments/">Using Comments</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-callback-mode/">Callback mode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-embedded-mode/">Embedded mode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-toolbars-menus/">Toolbar buttons and menu items</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-access-options/">Access Options</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-commands-events-apis/">Commands, Events and APIs</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../comments-with-mentions/">Comments with Mentions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advcode/">Enhanced Code Editor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Enhanced Media Embed</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../introduction-to-mediaembed/">Enhanced Media Embed</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../mediaembed-server-config/">Configure Enhanced Media Embed Server</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../mediaembed-server-integration/">Integrate Enhanced Media Embed Server</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advtable/">Enhanced Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../exportpdf/">Export to PDF</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../html-to-pdf-converter-api/">HTML to PDF Converter API</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">JWT Authentication</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../export-to-pdf-with-jwt-authentication-nodejs/">Node.js</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../export-to-pdf-with-jwt-authentication-php/">PHP</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../exportword/">Export to Word</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../html-to-docx-converter-api/">HTML to DOCX Converter API</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">JWT Authentication</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../export-to-word-with-jwt-authentication-nodejs/">Node.js</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../export-to-word-with-jwt-authentication-php/">PHP</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../footnotes/">Footnotes</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../formatpainter/">Format Painter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../fullpagehtml/">Full Page HTML</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../importword/">Import from Word</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../docx-to-html-converter-api/">DOCX to HTML Converter API</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">JWT Authentication</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../import-from-word-with-jwt-authentication-nodejs/">Node.js</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../import-from-word-with-jwt-authentication-php/">PHP</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../editimage/">Image Editing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../uploadcare/">Image Optimizer Powered by Uploadcare</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../inline-css/">Inline CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../linkchecker/">Link Checker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../math/">Math</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../markdown/">Markdown</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../mentions/">Mentions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../mergetags/">Merge Tags</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../moxiemanager/">MoxieManager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pageembed/">Page Embed</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../permanentpen/">Permanent Pen</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">PowerPaste</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../introduction-to-powerpaste/">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../powerpaste-options/">Options</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../powerpaste-commands-events-apis/">Commands and Events</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../powerpaste-support/">Supported functionality</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../powerpaste-troubleshooting/">Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../revisionhistory/">Revision History</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Spell Checker</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../introduction-to-tiny-spellchecker/">Spell Checker</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../custom-dictionaries-for-tiny-spellchecker/">Adding custom dictionaries</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../autocorrect/">Spelling Autocorrect</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../suggestededits/">Suggested Edits</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tableofcontents/">Table of Contents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advanced-templates/">Templates</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tiny Drive</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tinydrive-introduction/">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tinydrive-getting-started/">Getting started</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Starter projects</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-dotnet/">.Net Core</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-java/">Java Spring</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-nodejs/">Node.js</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-php/">PHP</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tinydrive-jwt-authentication/">JWT Authentication setup</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Configuration options</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-setup-options/">Setup options</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-ui-options/">UI options</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-dropbox-and-google-drive/">Dropbox and Google Drive integration options</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integrations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-dropbox-integration/">Dropbox</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-googledrive-integration/">Google Drive</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tinydrive-toolbars-menus/">Toolbar buttons and menu items</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">APIs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../introduction-to-tinydrive-apis/">Introduction to the plugin APIs</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-upload/">The Upload API</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-browse/">The Browse API</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-pick/">The Pick API</a>
+  </li>
+  <li class="nav-item" data-depth="5">
+    <a class="nav-link" href="../tinydrive-type-interfaces/">TypeScript interfaces</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../tinydrive-changelog/">Changelog</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Open source plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../accordion/">Accordion</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../anchor/">Anchor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../autolink/">Autolink</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../autoresize/">Autoresize</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../autosave/">Autosave</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../charmap/">Character Map</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../code/">Code</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../codesample/">Code Sample</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../directionality/">Directionality</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../emoticons/">Emoticons</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../fullscreen/">Full Screen</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../help/">Help</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../image/">Image</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../importcss/">Import CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../insertdatetime/">Insert Date/Time</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../link/">Link</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../lists/">Lists</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advlist/">List Styles</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../media/">Media</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../nonbreaking/">Nonbreaking Space</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pagebreak/">Page Break</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../preview/">Preview</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../quickbars/">Quick Toolbars</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../save/">Save</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../searchreplace/">Search and Replace</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../table/">Table</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../visualblocks/">Visual Blocks</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../visualchars/">Visual Characters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wordcount/">Word Count</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Accessibility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tinymce-and-screenreaders/">Accessibility Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../keyboard-shortcuts/">TinyMCE Keyboard shortcuts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Security</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../security/">Security guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security/#reporting-tinymce-security-issues">Reporting TinyMCE security issues</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security/#xref:what-we-do-to-maintain-security-for-tinymce">What we do to maintain security for TinyMCE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security/#configuring-content-security-policy-csp-for-tinymce">Configuring Content Security Policy (CSP) for TinyMCE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../security/#general-security-risks-for-user-input-elements">General security risks for user input elements</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tinymce-and-csp/">Content Security Policies (CSP)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tinymce-and-cors/">Cross-Origin Resource Sharing (CORS)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Release information</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../release-notes/">Release notes for TinyMCE</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TinyMCE 8.1.2</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.2-release-notes/#overview">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.2-release-notes/#bug-fix">Bug fix</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TinyMCE 8.1.1</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.1-release-notes/#overview">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.1-release-notes/#bug-fixes">Bug fix</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TinyMCE 8.1.0</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#overview">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#new-premium-plugin">New Premium plugin</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#accompanying-premium-plugin-changes">Accompanying Premium plugin changes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#improvements">Improvements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#changes">Changes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#bug-fixes">Bug fixes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#deprecated">Deprecated</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.1.0-release-notes/#known-issues">Known issues</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TinyMCE 8.0.2</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0.2-release-notes/#overview">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0.2-release-notes/#accompanying-premium-plugin-changes">Accompanying Premium plugin changes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0.2-release-notes/#accompanying-enhanced-skins-and-icon-packs-changes">Accompanying Enhanced Skins &amp; Icon Packs changes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TinyMCE 8.0.1</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0.1-release-notes/#overview">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0.1-release-notes/#bug-fixes">Bug fixes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0.1-release-notes/#known-issue">Known issue</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TinyMCE 8.0</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#overview">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#new-premium-plugins">New Premium plugins</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#accompanying-premium-plugin-changes">Accompanying Premium plugin changes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#accompanying-enhanced-skins-and-icon-packs-changes">Accompanying Enhanced Skins &amp; Icon Packs changes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#improvements">Improvements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#additions">Additions</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#changes">Changes</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#removed">Removed</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../8.0-release-notes/#bug-fixes">Bug fixes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../changelog/">Changelog</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../invalid-api-key/">Invalid API key</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../license-key/">License key</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../support/">Support</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../usage-based-billing/">Usage-Based Billing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">API Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">tinymce</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.root/">tinymce</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.addonmanager/">tinymce.AddOnManager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.annotator/">tinymce.Annotator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editor/">tinymce.Editor</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editormanager/">tinymce.EditorManager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editormode/">tinymce.EditorMode</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editoroptions/">tinymce.EditorOptions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editorupload/">tinymce.EditorUpload</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.env/">tinymce.Env</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.event/">tinymce.Event</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.fakeclipboard/">tinymce.FakeClipboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.formatter/">tinymce.Formatter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.notificationmanager/">tinymce.NotificationManager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.plugin/">tinymce.Plugin</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.shortcuts/">tinymce.Shortcuts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.theme/">tinymce.Theme</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.undomanager/">tinymce.UndoManager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.userlookup/">tinymce.UserLookup</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.windowmanager/">tinymce.WindowManager</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">tinymce.dom</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.bookmarkmanager/">tinymce.dom.BookmarkManager</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.domutils/">tinymce.dom.DOMUtils</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.eventutils/">tinymce.dom.EventUtils</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.rangeutils/">tinymce.dom.RangeUtils</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.scriptloader/">tinymce.dom.ScriptLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.selection/">tinymce.dom.Selection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.serializer/">tinymce.dom.Serializer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.stylesheetloader/">tinymce.dom.StyleSheetLoader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.textseeker/">tinymce.dom.TextSeeker</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.dom.treewalker/">tinymce.dom.TreeWalker</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">tinymce.editor.ui</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editor.ui.registry/">tinymce.editor.ui.Registry</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.editor.ui.ui/">tinymce.editor.ui.Ui</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">tinymce.geom</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.geom.rect/">tinymce.geom.Rect</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">tinymce.html</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.domparser/">tinymce.html.DomParser</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.entities/">tinymce.html.Entities</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.node/">tinymce.html.Node</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.schema/">tinymce.html.Schema</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.serializer/">tinymce.html.Serializer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.styles/">tinymce.html.Styles</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.html.writer/">tinymce.html.Writer</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">tinymce.util</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.delay/">tinymce.util.Delay</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.eventdispatcher/">tinymce.util.EventDispatcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.i18n/">tinymce.util.I18n</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.imageuploader/">tinymce.util.ImageUploader</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.observable/">tinymce.util.Observable</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.tools/">tinymce.util.Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../apis/tinymce.util.uri/">tinymce.util.URI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+<div class="nav-banner">
+  <a href="https://www.tiny.cloud/auth/signup/" data-marketing="link-www.tiny.cloud-auth-signup">
+    <img alt="Banner offering a free 14-day trial for the Professional Plan, encouraging users to sign up and experience enhanced capabilities with no initial commitment. A 'Start trial' button is displayed at the bottom" src="../../../_/img/banners/promo-box.svg"/>
+  </a>
+</div>  </nav>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../">TinyMCE Documentation</a></li>
+    <li>Interface</li>
+    <li>Toolbars</li>
+    <li><a href="./">Available Toolbar Buttons</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">TinyMCE Documentation v8</button>
+  <div class="version-menu">
+    <a class="version is-current" href="./">TinyMCE Documentation v8</a>
+    <a class="version" href="../../7/available-toolbar-buttons/">TinyMCE Documentation v7</a>
+    <a class="version" href="../../6/available-toolbar-buttons/">TinyMCE Documentation v6</a>
+    <a class="version" href="../../5/available-toolbar-buttons/">TinyMCE Documentation v5</a>
+  </div>
+</div>
+
+ <!--- Temporarily disabled WSRF-728 @amit -->
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu-container">
+    <div class="toc-menu"></div>
+    <div class="toc-banner">
+  <a href="/roadmap/" data-marketing="roadmap-docs-banner">
+    <img alt="See what's coming, vote on features, and submit your ideas"  src="../../../_/img/banners/roadmap-banner.svg"/>
+  </a>
+</div>
+  </div>
+</aside><article class="doc">
+<h1 class="page">Toolbar Buttons Available for TinyMCE</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following tables show all available toolbar items, including items provided by plugins. To retrieve a list from the editor, run the following command from the browser console:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-js hljs" data-lang="js">tinyMCE.activeEditor.ui.registry.getAll().buttons</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These toolbar buttons can be added to the editor using:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <a href="../toolbar-configuration-options/#toolbar" class="xref page"><code>toolbar</code></a> configuration option.</p>
+</li>
+<li>
+<p>The <a href="../quickbars/#quickbars_insert_toolbar" class="xref page"><code>quickbars_insert_toolbar</code></a> configuration option.</p>
+</li>
+<li>
+<p><a href="../contexttoolbar/" class="xref page">Custom Context toolbars</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="the-core-toolbar-buttons"><a class="anchor" href="#the-core-toolbar-buttons"></a>The core toolbar buttons</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following toolbar buttons are available for all TinyMCE instances without enabling any plugins:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>aligncenter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Center aligns the current block or image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alignjustify</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full aligns the current block or image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alignleft</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Left aligns the current block or image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alignnone</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes the alignment of the current block or image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>alignright</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Right aligns the current block or image.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>blockquote</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies block quote format to the current block level element.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>backcolor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies background color to selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>blocks</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dropdown list with block formats to apply to selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bold</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies the bold format to the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>copy</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copies the current selection into clipboard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cut</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuts the current selection into clipboard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fontfamily</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dropdown list with font families to apply to selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fontsize</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dropdown list with font sizes to apply to selection.<br>
+The <code>fontsize</code> and <code>fontsizeinput</code> toolbar buttons should not be placed in a <a href="../toolbar-configuration-options/#toolbar_groups" class="xref page">toolbar group</a> together or otherwise presented together.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fontsizeinput</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text entry input field to change font size of selection or current insertion point. Also provides increase and decrease font size buttons on either side of said input field.<br>
+This toolbar button is commonly used in conjunction with the <code><a href="../user-formatting-options/#font_size_input_default_unit" class="xref page">font_size_input_default</a></code> configuration option.<br>
+The <code>fontsize</code> and <code>fontsizeinput</code> toolbar buttons should not be placed in a <a href="../toolbar-configuration-options/#toolbar_groups" class="xref page">toolbar group</a> together or otherwise presented together.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>forecolor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies foreground/text color to selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h1</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes current line to the "Heading 1" style.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h2</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes current line to the "Heading 2" style.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h3</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes current line to the "Heading 3" style.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h4</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes current line to the "Heading 4" style.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes current line to the "Heading 5" style.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>h6</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes current line to the "Heading 6" style.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hr</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a horizontal rule into the editor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>indent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indents the current list item or block element.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>italic</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies the italic format to the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>language</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dropdown list with languages to apply to the selection. This button requires the <a href="../content-localization/#content_langs" class="xref page"><code>content_langs</code> option</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lineheight</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dropdown list with line heights to apply to selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>navigateback</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allows navigation between subtoolbar levels for multi-level toolbar configurations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>newdocument</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates a new document.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>outdent</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Outdents the current list item or block element.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>paste</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pastes the current clipboard into the editor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pastetext</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggles plain text pasting mode on/off. When in plain text mode, all rich content is converted into plain text.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>print</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prints the current editor contents.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>redo</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To redo the last undone operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>remove</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes (deletes) the selected content or the content before the cursor position.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>removeformat</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes the formatting from the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>selectall</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selects all content in the editor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>strikethrough</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies strike though format to the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>styles</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dropdown list with styles to apply to selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>subscript</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies subscript format to the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>superscript</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies superscript format to the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>underline</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Applies the underline format to the current selection.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>undo</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To undo the last operation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>visualaid</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggles the visual aids for invisible elements.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="a11ychecker-plugin"><a class="anchor" href="#a11ychecker-plugin"></a>A11yChecker plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The A11yChecker plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>a11ycheck</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the accessibility checker dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the A11yChecker plugin, see: <a href="../a11ychecker/" class="xref page">Plugins - The A11yChecker plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="accordion-plugin"><a class="anchor" href="#accordion-plugin"></a>Accordion plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Accordion plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>accordion</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executes the <code>InsertAccordion</code> command, adding an Accordion element at the current location.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>accordiontoggle</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executes the <code>ToggleAccordion</code> command, reversing the state of the selected Accordion, to open from closed and to closed from open.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>accordionremove</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Executes the <code>RemoveAccordion</code> command, removing the selected Accordion.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Accordion plugin, see: <a href="../accordion/" class="xref page">Plugins - The Accordion plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ai-assistant-plugin"><a class="anchor" href="#ai-assistant-plugin"></a>AI Assistant plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The AI Assistant plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>aidialog</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open the AI Assistant dialog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>aishortcuts</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the AI Shortcuts menu, displaying the available shortcut prompts for querying the AI API.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the AI Assistant plugin, see: <a href="../ai/" class="xref page">Plugins - The AI Assistant plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="enhanced-code-editor-plugin"><a class="anchor" href="#enhanced-code-editor-plugin"></a>Enhanced Code Editor plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Enhanced Code Editor plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the code dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Enhanced Code Editor plugin, see: <a href="../advcode/" class="xref page">Plugins - The Enhanced Code Editor plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="list-styles-plugin"><a class="anchor" href="#list-styles-plugin"></a>List Styles plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The List Styles plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bullist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formats the current selection as a bullet list with dropdown options for different bullet styles (disc, circle, square).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>numlist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formats the current selection as a numbered list with dropdown options for different number styles (decimal, alpha, roman, greek).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The List Styles plugin extends the core <code>bullist</code> and <code>numlist</code> toolbar buttons by adding dropdown arrows that allow users to select from different list styles. These buttons are provided by the core <code>lists</code> plugin, but the dropdown functionality is added by the List Styles plugin.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For information on the List Styles plugin, see: <a href="../advlist/" class="xref page">Plugins - The List Styles plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="enhanced-tables-plugin"><a class="anchor" href="#enhanced-tables-plugin"></a>Enhanced Tables plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Enhanced Tables plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>advtablerownumbering</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds or removes (toggles) a row numbering column on the selected table.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Enhanced Tables plugin, see: <a href="../advtable/" class="xref page">Plugins - The Enhanced Tables plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="advanced-typography-plugin"><a class="anchor" href="#advanced-typography-plugin"></a>Advanced Typography plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Advanced Typography plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>typopgraphy</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runs the currently active set of Advanced Typography rules over the document or the current selection. Also contains a menu of available language-specific rule sets. When the menu reveal, rather than the icon proper, is pressed, this menu is displayed and a new language-specific rule set can be selected. Note that selecting a language from the menu both switches to that language’s rule set and runs that language’s rule set over the document or the current selection.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Advanced Typography plugin, see: <a href="../advanced-typography/" class="xref page">Plugins - The Advanced Typography plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anchor-plugin"><a class="anchor" href="#anchor-plugin"></a>Anchor plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Anchor plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>anchor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates/Edits anchor elements.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Anchor plugin, see: <a href="../anchor/" class="xref page">Plugins - The Anchor plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="autosave-plugin"><a class="anchor" href="#autosave-plugin"></a>Autosave plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Autosave plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>restoredraft</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Restores to the latest auto saved draft.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Autosave plugin, see: <a href="../autosave/" class="xref page">Plugins - The Autosave plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="case-change-plugin"><a class="anchor" href="#case-change-plugin"></a>Case Change plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Case Change plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>casechange</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Changes the case of text in a block selection to uppercase, lowercase, or title case.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Case Change plugin, see: <a href="../casechange/" class="xref page">Plugins - The Case Change plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="character-map-plugin"><a class="anchor" href="#character-map-plugin"></a>Character Map plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Character Map plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>charmap</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts custom characters into the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Character Map plugin, see: <a href="../charmap/" class="xref page">Plugins - The Character Map plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="checklist-plugin"><a class="anchor" href="#checklist-plugin"></a>Checklist plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Checklist plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>checklist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates a checklist.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Checklist plugin, see: <a href="../checklist/" class="xref page">Plugins - The Checklist plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="code-plugin"><a class="anchor" href="#code-plugin"></a>Code plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Code plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>code</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the code dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Code plugin, see: <a href="../code/" class="xref page">Plugins - The Code plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="code-sample-plugin"><a class="anchor" href="#code-sample-plugin"></a>Code Sample plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Code Sample plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>codesample</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts code snippets with syntax highlighting.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Code Sample plugin, see: <a href="../codesample/" class="xref page">Plugins - The Code Sample plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="comments-plugin"><a class="anchor" href="#comments-plugin"></a>Comments plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Comments plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addcomment</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds a comment at the cursor location or to the selected content.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>showcomments</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shows/hides the Comments sidebar UI and comments present in the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Comments plugin, see: <a href="../introduction-to-tiny-comments/" class="xref page">Plugins - The Comments plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="directionality-plugin"><a class="anchor" href="#directionality-plugin"></a>Directionality plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Directionality plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ltr</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the directionality of contents to ltr.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rtl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the directionality of contents to rtl.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Directionality plugin, see: <a href="../directionality/" class="xref page">Plugins - The Directionality plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="emoticons-plugin"><a class="anchor" href="#emoticons-plugin"></a>Emoticons plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Emoticons plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>emoticons</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Emojis dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Emoticons plugin, see: <a href="../emoticons/" class="xref page">Plugins - The Emoticons plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="full-page-html-plugin"><a class="anchor" href="#full-page-html-plugin"></a>Full Page HTML plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Full Page HTML plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fullpagehtml</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Full Page HTML dialog to edit document metadata and properties including title, keywords, description, and HTML structure settings.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Full Page HTML plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Full Page HTML plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="export-to-pdf-plugin"><a class="anchor" href="#export-to-pdf-plugin"></a>Export to PDF plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Export to PDF plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>exportpdf</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generates a PDF file directly from the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Export to PDF plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Export to PDF plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="export-to-word-plugin"><a class="anchor" href="#export-to-word-plugin"></a>Export to Word plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Export to Word plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>exportword</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generate a .docx file directly from the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Export to Word plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Export to Word plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="footnotes-plugin"><a class="anchor" href="#footnotes-plugin"></a>Footnotes plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Footnotes plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>footnotes</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a superscripted footnote number into the editor at the selection, and creates a new entry in the footnotes section linked to that footnote.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>footnotesupdate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manually updates the state of all footnotes in a TinyMCE document.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Footnotes plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Footnotes plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="format-painter-plugin"><a class="anchor" href="#format-painter-plugin"></a>Format Painter plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Format Painter plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>formatpainter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables and disables format painting.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Format Painter plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Format Painter plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="full-screen-plugin"><a class="anchor" href="#full-screen-plugin"></a>Full Screen plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Full Screen plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fullscreen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggles fullscreen mode.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Full Screen plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Full Screen plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="help-plugin"><a class="anchor" href="#help-plugin"></a>Help plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Help plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>help</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the help dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Help plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Help plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="image-plugin"><a class="anchor" href="#image-plugin"></a>Image plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Image plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>image</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates/Edits images within the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Image plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Image plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="import-from-word-plugin"><a class="anchor" href="#import-from-word-plugin"></a>Import from Word plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Import from Word plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>importword</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the import dialog so the user can select a specific <code>.docx</code> or <code>.dotx</code> file.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Import from Word plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Import from Word plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="image-editing-plugin"><a class="anchor" href="#image-editing-plugin"></a>Image Editing plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Image Editing plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>editimage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edits the current image in the image dialog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>fliph</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flips the current image horizontally.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>flipv</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flips the current image vertically.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>imageoptions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the image options dialog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rotateleft</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rotates the current image counterclockwise.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>rotateright</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rotates the current image clockwise.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Image Editing plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Image Editing plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="insert-datetime-plugin"><a class="anchor" href="#insert-datetime-plugin"></a>Insert Date/Time plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Insert Date/Time plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>insertdatetime</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts the current date/time.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Insert Date/Time plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Insert Date/Time plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="link-plugin"><a class="anchor" href="#link-plugin"></a>Link plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Link plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>link</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates/Edits links within the editor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>openlink</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the selected link in a new tab.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>unlink</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes links from the current selection.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Link plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Link plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="lists-plugin"><a class="anchor" href="#lists-plugin"></a>Lists plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Lists plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>bullist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formats the current selection as a bullet list.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>numlist</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Formats the current selection as a numbered list.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Lists plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Lists plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="math-plugin"><a class="anchor" href="#math-plugin"></a>Math plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Math plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>math</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the math modal dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Math plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Math plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="media-plugin"><a class="anchor" href="#media-plugin"></a>Media plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Media plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>media</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates/Edits embedded media elements.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Media plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Media plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="merge-tags-plugin"><a class="anchor" href="#merge-tags-plugin"></a>Merge Tags plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Merge Tags plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>mergetags</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Menu toolbar button containing merge tags as a drop down list of nested menus and items. This list is specified by the <a href="../mergetags/#mergetags_list" class="xref page"><code>mergetags_list</code></a> option.  When a merge tag is chosen from the menu it is then inserted into the content. This button also includes a search field for finding specific merge tags.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Merge Tags plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Merge Tags plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="nonbreaking-space-plugin"><a class="anchor" href="#nonbreaking-space-plugin"></a>Nonbreaking Space plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Nonbreaking Space plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nonbreaking</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a nonbreaking space into the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Nonbreaking Space plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Nonbreaking Space plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="page-break-plugin"><a class="anchor" href="#page-break-plugin"></a>Page Break plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Page Break plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pagebreak</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a pagebreak into the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Page Break plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Page Break plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="page-embed-plugin"><a class="anchor" href="#page-embed-plugin"></a>Page Embed plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Page Embed plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>pageembed</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the insert or edit iframe dialog.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Page Embed plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Page Embed plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="permanent-pen-plugin"><a class="anchor" href="#permanent-pen-plugin"></a>Permanent Pen plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Permanent Pen plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>permanentpen</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enables and disables Permanent Pen formatting.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Permanent Pen plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Permanent Pen plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="preview-plugin"><a class="anchor" href="#preview-plugin"></a>Preview plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Preview plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>preview</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Previews the current editor contents.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Preview plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Preview plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="quick-toolbars-plugin"><a class="anchor" href="#quick-toolbars-plugin"></a>Quick Toolbars plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Quick Toolbars plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quickimage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts an image from the local machine.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quicklink</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a link in a quicker way.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>quicktable</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a table 2x2.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Quick Toolbars plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Quick Toolbars plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="revision-history-plugin"><a class="anchor" href="#revision-history-plugin"></a>Revision History plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Revision History plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>revisionhistory</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Revision History view.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Revision History plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Revision History plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="save-plugin"><a class="anchor" href="#save-plugin"></a>Save plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Save plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>cancel</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cancels/Resets the editor contents to it&#8217;s initial state.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>save</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Saves the current editor contents to a form or ajax call.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Save plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Save plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="search-and-replace-plugin"><a class="anchor" href="#search-and-replace-plugin"></a>Search and Replace plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Search and Replace plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>searchreplace</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Searches and/or Replaces contents within the editor.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Search and Replace plugin, see: <a href="../fullpagehtml/" class="xref page">Plugins - The Search and Replace plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="spell-checker-plugin"><a class="anchor" href="#spell-checker-plugin"></a>Spell Checker plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Spell Checker plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spellcheckdialog</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the spelling checker dialog if <code>spellchecker_dialog</code> is <code>false</code>, otherwise this button is disabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spellchecker</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the spelling checker dialog if <code>spellchecker_dialog</code> is <code>true</code>, otherwise this button enables or disables spell checking as-you-type.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Spell Checker plugin, see: <a href="../introduction-to-tiny-spellchecker/" class="xref page">Plugins - The Spell Checker plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="suggested-edits-plugin"><a class="anchor" href="#suggested-edits-plugin"></a>Suggested Edits plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Suggested Edits plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>suggestededits</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Review edits view.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>suggestededits-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Review edits view (this button uses text instead of an icon).</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Suggested Edits plugin, see: <a href="../suggestededits/" class="xref page">Plugins - The Suggested Edits plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="table-plugin"><a class="anchor" href="#table-plugin"></a>Table plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Table plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>table</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Creates/Edits table elements.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellprops</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Cell properties dialog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecopyrow</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copies the current row to the clipboard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecutrow</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cuts the current row to the clipboard.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tabledelete</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deletes table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tabledeletecol</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deletes the selected column.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tabledeleterow</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deletes the current row row.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableinsertdialog</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the table properties dialog for creating a new table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableinsertcolafter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts column after the current one.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableinsertcolbefore</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a column before the current one.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableinsertrowafter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a new row after the current one.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableinsertrowbefore</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a new row before the current one.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablemergecells</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merges the selected cells.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablepasterowafter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pastes the row in the clipboard after the current row.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablepasterowbefore</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pastes the row in the clipboard before the current row.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableprops</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the table properties dialog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablerowprops</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Row properties dialog.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablesplitcells</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Splits the current merged cell.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableclass</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds or removes pre-defined classes to the selected table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellclass</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds or removes pre-defined classes to selected cells in the table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellvalign</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the vertical alignment of the selected cells.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellborderwidth</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the border width of all selected cells.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellborderstyle</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the style of border for all selected cells.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecaption</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggles the caption on the selected table.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellbackgroundcolor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the background color of the selected cells.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecellbordercolor</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the border color of the selected cells.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablerowheader</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle a row between being a table header row or a table body row.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tablecolheader</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle a column between being a table header column and a table body column.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Table plugin, see: <a href="../table/" class="xref page">Plugins - The Table plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="templates-plugin"><a class="anchor" href="#templates-plugin"></a>Templates plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Templates plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>inserttemplate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Templates dialog which presents all templates available to the particular TinyMCE instance for selection and insertion.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>addtemplate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open the New template dialog, allowing for the selected text to be saved as a named template and placed in an already-set category. If there is no selection current in the TinyMCE editor, this button is disabled.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Templates plugin, see: <a href="../advanced-templates/" class="xref page">Plugins - The Templates plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="table-of-contents-plugin"><a class="anchor" href="#table-of-contents-plugin"></a>Table of Contents plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Table of Contents plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableofcontents</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inserts a Table of Contents into the editor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>tableofcontentsupdate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Updates the Table of Contents block element.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Table of Contents plugin, see: <a href="../advanced-templates/" class="xref page">Plugins - The Table of Contents plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tiny-drive-plugin"><a class="anchor" href="#tiny-drive-plugin"></a>Tiny Drive plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Tiny Drive plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>insertfile</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens the Tiny Drive file selector.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Tiny Drive plugin, see: <a href="../tinydrive-introduction/" class="xref page">Plugins - The Tiny Drive plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="visual-blocks-plugin"><a class="anchor" href="#visual-blocks-plugin"></a>Visual Blocks plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Visual Blocks plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>visualblocks</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggles the visibility of block elements.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Visual Blocks plugin, see: <a href="../visualblocks/" class="xref page">Plugins - The Visual Blocks plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="visual-characters-plugin"><a class="anchor" href="#visual-characters-plugin"></a>Visual Characters plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Visual Characters plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>visualchars</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggles the visibility of non breaking character elements.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Visual Characters plugin, see: <a href="../visualchars/" class="xref page">Plugins - The Visual Characters plugin</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="word-count-plugin"><a class="anchor" href="#word-count-plugin"></a>Word Count plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Word Count plugin provides the following toolbar buttons:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Toolbar button identifier</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>wordcount</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens a word count dialog showing word and character counts.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For information on the Word Count plugin, see: <a href="../wordcount/" class="xref page">Plugins - The Word Count plugin</a></p>
+</div>
+</div>
+</div>
+<script 
+  async 
+  src="https://widget.kapa.ai/kapa-widget.bundle.js"
+  data-website-id="11d035a6-8dd4-4305-9f2f-083b63e4956d"
+  data-project-name="Tiny"
+  data-project-color="#222F3E"
+  data-font-family="Inter"
+  data-project-logo="../../../_/img/tiny_logotype.svg"
+
+  data-button-text="Ask AI"
+  data-button-bg-color="#000850"
+  data-button-border-radius="2px"
+  data-button-text-font-family="Inter"
+  data-button-text-font-size="16px"
+  data-button-text-font-weight="Bold (700)"
+  data-button-text-color="#FFF"
+  data-button-border="0.5px solid #F8F9FA"
+  data-button-box-shadow="unset"
+
+  data-modal-header-bg-color="#000850"
+  data-modal-header-border-bottom="none"
+  data-modal-title-font-size="1.25rem"
+  data-modal-title-font-weight="Bold (700)"
+  data-modal-title-color="#FFF"
+  data-modal-title="Tiny Docs AI"
+  data-modal-disclaimer-text-color="#222F3E80"
+  data-modal-disclaimer="Hi! I’m the TinyMCE docbot and I know a lot about TinyMCE but sometimes I get it wrong, so please keep that in mind."
+
+  data-example-question-button-text-color="#222F3E"
+  data-example-question-button-border="1px solid #E3E3E3"
+  data-modal-example-questions-title="Example Questions"
+  data-modal-example-questions="How to install?, How to upgrade to the latest version?, How to extend TinyMCE with plugins?, How to get Free API key?"
+  data-submit-query-button-bg-color="#335DFF"
+
+  data-query-input-text-color="#222F3E"
+  data-query-input-focus-border-color="#335DFF"
+  data-modal-ask-ai-input-placeholder="Ask me questions about Tiny Docs..."
+
+  data-user-analytics-fingerprint-enabled="true"
+></script>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-brand">
+  <div class="footer-brand-logo">
+    <a href="https://tiny.cloud/" target="_blank">
+      <img src="../../../_/img/tiny-footer.svg" height="32">
+    </a>
+  </div>
+  <div class="footer-brand-social-links-wrapper">
+    <p class="footer-brand-social-links-title">
+      Stay Connected
+    </p>
+    <div class="footer-brand-social-links-list">
+      <a href="https://github.com/tinymce/" title="Tiny on Github" aria-label="Tiny on Github" target="_blank" rel="noopener">
+        <svg class="footer-brand-social-links-icon" xmlns="http://www.w3.org/2000/svg" view-box="0 0 24 24">
+          <g>
+            <path d="M12,1 C5.9893592,0.938921784 1.06592606,5.75941041 1,11.77 C1.02281847,16.4500062 4.06001447,20.5817236 8.52,22 C9.07,22.1 9.27,21.77 9.27,21.48 L9.27,19.65 C6.21,20.3 5.56,18.21 5.56,18.21 C5.35629658,17.5539 4.92323219,16.9930461 4.34,16.63 C3.34,15.97 4.42,15.98 4.42,15.98 C5.12027975,16.0736186 5.739212,16.482556 6.1,17.09 C6.74561277,18.2095056 8.16908307,18.6054083 9.3,17.98 C9.35590713,17.4323821 9.60389175,16.9222423 10,16.54 C7.56,16.27 5,15.35 5,11.22 C4.9781802,10.1426797 5.37624267,9.09911049 6.11,8.31 C5.77582715,7.38506839 5.81528599,6.36631275 6.22,5.47 C6.22,5.47 7.15,5.18 9.22,6.57 C11.021894,6.0898385 12.918106,6.0898385 14.72,6.57 C16.82,5.18 17.72,5.47 17.72,5.47 C18.124714,6.36631275 18.1641729,7.38506839 17.83,8.31 C18.580802,9.08464704 19.0004498,10.121213 19,11.2 C19,15.34 16.42,16.25 14,16.52 C14.5365517,17.0409353 14.8117185,17.7747133 14.75,18.52 L14.75,21.47 C14.75,21.82 14.95,22.1 15.5,21.99 C19.9466587,20.5631431 22.9725241,16.4398971 23,11.77 C22.9340739,5.75941041 18.0106408,0.938921784 12,1" />
+          </g>
+        </svg>
+      </a>
+      <a href="https://stackoverflow.com/questions/tagged/tinymce" title="Tiny on StackOverflow" aria-label="Tiny on StackOverflow" target="_blank" rel="noopener">
+        <svg class="footer-brand-social-links-icon" xmlns="http://www.w3.org/2000/svg" view-box="0 0 24 24">
+          <g>
+            <path d="M16.2363057,15.4535135 L7.01273885,13.6756757 L7.40254777,11.7075676 L16.6375796,13.6994595 L16.2363057,15.4535135 Z M8.21656051,9.03783784 L9.01910828,7.25405405 L17.6178344,11.4162162 L16.8152866,13.2 L8.21656051,9.03783784 Z M10.6242038,4.63783784 L11.8280255,3.15135135 L19.1082803,9.45405405 L17.9044586,10.9405405 L10.6242038,4.63783784 Z M15.3248408,0 L21,7.90810811 L19.4522293,9.0972973 L13.7770701,1.18918919 L15.3248408,0 Z M7.01273885,17.8378378 L7.01273885,16.0540541 L16.1847134,16.0540541 L16.1847134,17.8378378 L7.01273885,17.8378378 Z M17.9044586,19.6216216 L17.9044586,14.2702703 L20.1974522,14.2702703 L20.1974522,22 L3,22 L3,14.2702703 L5.29299363,14.2702703 L5.29299363,19.6216216 L17.9044586,19.6216216 Z" />
+          </g>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/jointiny" title="Tiny on LinkedIn" aria-label="Tiny on LinkedIn" target="_blank" rel="noopener">
+        <svg class="footer-brand-social-links-icon" xmlns="http://www.w3.org/2000/svg" view-box="0 0 24 24">
+          <g>
+            <path d="M21.006 2H2.87a.852.852 0 0 0-.87.875V21.25c0 .375.373.75.87.75h18.26c.497 0 .87-.375.87-.875V2.875c-.124-.5-.497-.875-.994-.875zM7.84 19H4.98V9.5h2.982V19h-.124zM6.472 8.25c-.994 0-1.74-.875-1.74-1.75 0-1 .746-1.75 1.74-1.75s1.74.75 1.74 1.75c-.125.875-.87 1.75-1.74 1.75zM18.894 19h-2.981v-4.625c0-1.125 0-2.5-1.49-2.5-1.491 0-1.74 1.25-1.74 2.5v4.75H9.702V9.5h2.857v1.25c.373-.75 1.366-1.5 2.733-1.5 2.981 0 3.478 2 3.478 4.5V19h.124z" />
+          </g>
+        </svg>
+      </a>
+      <a href="https://www.twitter.com/jointiny" title="Tiny on Twitter" aria-label="Tiny on Twitter" target="_blank" rel="noopener">
+        <svg class="footer-brand-social-links-icon" xmlns="http://www.w3.org/2000/svg" view-box="0 0 24 24">
+          <g>
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <a href="https://www.tiny.cloud/tinymce/security/" target="_blank">
+      <img class="footer-brand-social-links-soc2-badge" alt="SOC2 compliance badge" title="TinyMCE is SOC2 compliant"src="../../../_/img/SOC2-compliance.png" />
+    </a>
+  </div>
+</div>    <div class="footer-links">
+  <div class="footer-links-layout">
+    <div class="footer-links-section-group">
+      <div class="footer-links-section">
+        <p class="footer-brand-social-links-title">
+          Products
+        </p>
+        <a class="footer-links-section-link" data-marketing="footer-products-features" href="https://www.tiny.cloud/tinymce/">TinyMCE</a>
+        <a class="footer-links-section-link" data-marketing="footer-products-drive" href="https://www.tiny.cloud/drive/">Drive</a>
+        <a class="footer-links-section-link" data-marketing="footer-products-drive" href="https://www.tiny.cloud/moxiemanager/">MoxieManager</a>
+      </div>
+      <div class="footer-links-section">
+        <p class="footer-brand-social-links-title">
+          Pricing
+        </p>
+        <a class="footer-links-section-link" data-marketing="footer-pricing-tinymce" href="https://www.tiny.cloud/pricing/">TinyMCE</a>
+        <a class="footer-links-section-link" data-marketing="footer-pricing-drive" href="https://www.tiny.cloud/pricing/drive/">Drive</a>
+        <a class="footer-links-section-link" data-marketing="footer-pricing-moxiemanager" href="https://www.tiny.cloud/pricing/moxiemanager/">MoxieManager</a>
+      </div>
+    </div>
+    <div class="footer-links-section-group">
+      <div class="footer-links-section">
+        <p class="footer-brand-social-links-title">
+          Developers
+        </p>
+        <a class="footer-links-section-link" data-marketing="footer-developers-docs" href="https://www.tiny.cloud/docs/tinymce/latest/">Documentation</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-get-started" href="https://www.tiny.cloud/auth/signup/">Get Started</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-integrations" href="https://www.tiny.cloud/solutions/editor-framework-integration/">Integrations</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-api-reference" href="https://www.tiny.cloud/docs/tinymce/latest/apis/tinymce.root/">API Reference</a>
+        <a class="footer-links-section-link" data-marketing="footer-roadmap" href="https://www.tiny.cloud/roadmap/">Roadmap</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-support" href="https://support.tiny.cloud/">Support</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-blog" href="https://www.tiny.cloud/blog/">Blog</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-alternatives" href="https://www.tiny.cloud/tinymce-alternatives/">Editor Comparisons</a>
+        <a class="footer-links-section-link" data-marketing="footer-developers-get-tinymce" href="https://www.tiny.cloud/get-tiny/">Get TinyMCE Free</a>
+      </div>
+    </div>
+    <div class="footer-links-section-group">
+      <div class="footer-links-section">
+        <p class="footer-brand-social-links-title">
+          Company
+        </p>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-about" href="https://www.tiny.cloud/about/">About</a>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-who-is-using-tiny" href="https://www.tiny.cloud/who-is-using-tinymce/">Who is Tiny?</a>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-careers" href="https://www.tiny.cloud/about/#careers">Careers</a>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-partners" href="https://www.tiny.cloud/partner-directory/">Partners</a>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-contact" href="https://www.tiny.cloud/contact/">Contact Us</a>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-legal" href="https://www.tiny.cloud/legal/">Legal</a>
+        <a class="footer-links-section-link" data-marketing="footer-tiny-security" href="https://www.tiny.cloud/tinymce/security/">Security</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer-corporate">
+  © Copyright 2025 Tiny Technologies Inc.
+  <p class="footer-trademark">
+    TinyMCE® and Tiny® are registered trademarks of Tiny Technologies, Inc.
+  </p>
+</div>  </div>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+
+<script type="text/javascript">
+piAId = '';
+piCId = '';
+piHostname = 'pi.pardot.com';
+
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+</script>  </body>
+</html>
